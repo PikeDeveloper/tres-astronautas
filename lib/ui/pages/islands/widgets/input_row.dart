@@ -12,21 +12,19 @@ class InPutRow extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 20),
       width: 150,
       height: 50,
-      child: Expanded(
-        child: Row(
-          children: [
-            Text("Rows: "),
-            Expanded(
-              child: TextFormField(
-                initialValue: "3",
-                keyboardType: TextInputType.numberWithOptions(decimal: false),
-                onChanged: (value) {
-                  islandProvider.islandRow = int.parse(value);
-                },
-              ),
+      child: Row(
+        children: [
+          Text("Rows: "),
+          Expanded(
+            child: TextFormField(
+              initialValue: "3",
+              keyboardType: TextInputType.numberWithOptions(decimal: false),
+              onChanged: (value) {
+                islandProvider.islandRow = int.parse(value);
+              },
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

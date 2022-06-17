@@ -12,21 +12,19 @@ class InPutColunm extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 20),
       width: 150,
       height: 50,
-      child: Expanded(
-        child: Row(
-          children: [
-            Text("Columns: "),
-            Expanded(
-              child: TextFormField(
-                initialValue: "3",
-                keyboardType: TextInputType.numberWithOptions(decimal: false),
-                onChanged: (value) {
-                  islandProvider.islandColumn = int.parse(value);
-                },
-              ),
+      child: Row(
+        children: [
+          Text("Columns: "),
+          Expanded(
+            child: TextFormField(
+              initialValue: "3",
+              keyboardType: TextInputType.numberWithOptions(decimal: false),
+              onChanged: (value) {
+                islandProvider.islandColumn = int.parse(value);
+              },
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
