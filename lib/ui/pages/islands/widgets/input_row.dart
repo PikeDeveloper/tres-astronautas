@@ -17,7 +17,7 @@ class InPutRow extends StatelessWidget {
           Text("Rows: "),
           Expanded(
             child: TextFormField(
-              initialValue: "3",
+              initialValue: "9",
               keyboardType: TextInputType.numberWithOptions(decimal: false),
               onChanged: (value) {
                 islandProvider.islandRow = int.parse(value);

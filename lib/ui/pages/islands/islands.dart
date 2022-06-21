@@ -3,6 +3,7 @@ import 'package:tresastronautas/ui/pages/nasa/nasa_home.dart';
 import 'widgets/array.dart';
 import 'widgets/input_column.dart';
 import 'widgets/input_row.dart';
+import 'widgets/scroll_area.dart';
 
 class Islands extends StatelessWidget {
   static const String route = "/islands";
@@ -13,21 +14,18 @@ class Islands extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          Column(
-            children: <Widget>[
-              SizedBox(height: 100),
-              InPutColunm(),
-              InPutRow(),
-              SizedBox(height: 10),
-              CustomArray(),
-              Padding(
-                padding: const EdgeInsets.all(20.0),
-                child: Text(
-                    "No me alcanzó el tiempo para calcular las islas",
-                    style: TextStyle(fontSize: 20, color: Colors.blue),
-                  ),
-              ),
-            ],
+          SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,  
+              children: <Widget>[
+                SizedBox(height: 70),
+                InPutColunm(),
+                InPutRow(),
+                SizedBox(height: 10),
+                CustomArray(),
+                SizedBox(height: 20),
+              ],
+            ),
           ),
           Positioned(
             top: 30,

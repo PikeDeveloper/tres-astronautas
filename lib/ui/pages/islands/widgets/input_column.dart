@@ -17,7 +17,7 @@ class InPutColunm extends StatelessWidget {
           Text("Columns: "),
           Expanded(
             child: TextFormField(
-              initialValue: "3",
+              initialValue: "9",
               keyboardType: TextInputType.numberWithOptions(decimal: false),
               onChanged: (value) {
                 islandProvider.islandColumn = int.parse(value);

@@ -26,11 +26,11 @@ class SquareButton extends StatelessWidget {
               : Colors.white,
           boxShadow: const [
             BoxShadow(
-              color: Color.fromARGB(255, 120, 119, 119),
-              blurRadius: 10.0,
-              spreadRadius: -10.0,
-              offset: Offset(0, 6),
-            )
+            color: Color.fromARGB(255, 194, 192, 192),
+            blurRadius: 5.0,
+            spreadRadius: -2.0,
+            offset: Offset(0, 3),
+          )
           ],
         ),
         child: TextButton(
